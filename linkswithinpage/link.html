@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head><title>links within a page</title></head>
+<body>
+<h2 align="center" style="background-color:powderblue>"><u>INTRODUCTION TO WEB</u></h2>
+<ul type="disc"><h3>
+<li><a href="#type1">Client/Server concepts</a></li><br>
+<li><a href="#type2">Components  of  Web  Application</a></li><br>
+<li><a href="#type3">Types  of Web Content</a></li><br>
+<li><a href="#type4">Overview of HTTP - HTTP request – response</a></li><br>
+<li><a href="#type5">Generation of Dynamic Web Pages,Application Server,Web Security</a></li></h3></ul>
+<br>
+<br>
+<br>
+<i>
+<h4 id="type1">
+<h3 align="center"><u>Client/Server Concepts</u></h3>
+<p>The phrases 'client/server', 'distributed computing' and 'cooperative processing' have been in use for some time, but in many ways they are open to interpretation. In fact, the principle behind client/server computing has been a fundamental part of the COBOL language since the very beginning, but today's jargon tends to mask the actual functions being performed.<br>
+
+Essentially, a client is a consumer of services, and a server provides services. Thus the term 'client' could be more accurately defined as 'service requester', and server as 'service provider', with the requester 'calling' the provider for the required service.<br>
+
+In COBOL, the CALL statement is the method used to invoke such requests, but the similarity between the standard CALL statement and client/server functionality may not always be immediately apparent.<br>
+
+The CALL statement is usually associated with calls to local functions (that is, CALLed programs which reside on the same machine as the CALLing program), which can be regarded as services. Thus, CALLing a date validation routine is actually requesting a validation service from a particular module.<br>
+
+CALLs don't necessarily have to be to local functions; they can be made to remote functions (that is, CALLed programs located on a different machine from the CALLing program). These are often referred to as 'remote procedure CALLs' or RPCs.<br>
+
+The client/server model extends the COBOL CALL scenario in the following ways:<br>
+<ul type="circle">
+ <li>Many subprograms can be grouped to provide the 'service'.</li><br>
+ <li>The client does not necessarily need to be aware of the actual subprograms which comprise the service.</li><br>
+ <li>A server can provide multiple services.</li><br>
+ <li>Multiple clients can request services from a single server.</li><br>
+ <li>The location of the server program is typically remote (that is, on a separate machine) from the requesting program.</li><br>
+ <li>A single client can request services from multiple servers.</li><br></ul>
+
+Several distributed processing functions, such as presentation logic (screen handling), business logic (data processing) and data access (file/database manipulation), logically suggest themselves as candidates for the client/server model. Middleware (communications/transaction processing) is then needed to connect these distributed functions.</p></h4>
+<h4 id="type2">
+<h3 align="center"><u>Components  of  Web  Application</u></h3>
+<p>Web Components is a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your web apps.<br>
+Concepts and usage<br>
+
+As developers, we all know that reusing code as much as possible is a good idea. This has traditionally not been so easy for custom markup structures — think of the complex HTML (and associated style and script) you've sometimes had to write to render custom UI controls, and how using them multiple times can turn your page into a mess if you are not careful.<br>
+
+Web Components aims to solve such problems — it consists of three main technologies, which can be used together to create versatile custom elements with encapsulated functionality that can be reused wherever you like without fear of code collisions.<br>
+
+    Custom elements: A set of JavaScript APIs that allow you to define custom elements and their behavior, which can then be used as desired in your user interface.<br>
+    Shadow DOM: A set of JavaScript APIs for attaching an encapsulated "shadow" DOM tree to an element — which is rendered separately from the main document DOM — and controlling associated functionality. In this way, you can keep an element's features private, so they can be scripted and styled without the fear of collision with other parts of the document.<br>
+    HTML templates: The template and slot elements enable you to write markup templates that are not displayed in the rendered page. These can then be reused multiple times as the basis of a custom element's structure.<br>
+
+The basic approach for implementing a web component generally looks something like this:<br>
+
+    Create a class in which you specify your web component functionality, using the ECMAScript 2015 class syntax (see Classes for more information).<br>
+    Register your new custom element using the CustomElementRegistry.define() method, passing it the element name to be defined, the class or function in which its functionality is specified, and optionally, what element it inherits from.<br>
+    If required, attach a shadow DOM to the custom element using Element.attachShadow() method. Add child elements, event listeners, etc., to the shadow DOM using regular DOM methods.<br>
+    If required, define an HTML template using template and slot. Again use regular DOM methods to clone the template and attach it to your shadow DOM.<br>
+    Use your custom element wherever you like on your page, just like you would any regular HTML element.<br>
+</p></h4>
+<h4 id="type3">
+<h3 align="center"><u>Types  of Web Content</u></h3>
+<p>
+
+Here are 7 types of high-quality web content that can please website visitors and keep them coming back for more.<br>
+1. Blogs<br>
+
+Blogging is an invaluable tool for driving visitors to your website, and building awareness about you and your brand.
+
+Generally written from a more personal and informal point of view than content assets, a blog is a great way to connect with readers. It is the perfect vehicle for providing them with information that not only answers a question or solves a problem, but also helps to establish you as a trusted authority on the topic.
+
+Blogs are also a great way to keep your web content fresh, enabling you to post new content on a regular basis and helping you continue to rank in SERPs (search results).<br>
+2. Content assets<br>
+
+This broad category of web content includes collateral and similar resources you have already invested in and can now repurpose to help draw visitors to your website.
+
+Some examples are product brochures, user manuals, slide presentations, white papers, industry reports, case studies, fact sheets, ebooks, webinars, and podcasts.
+
+The goal is to extend the value of these assets by using them across different digital media and channels. The content can be broken up into smaller pieces and distributed in new ways, such as via blog posts, tweets, video clips, email blasts, search engine ads, and other channels.<br>
+3. Calls to action<br>
+
+A call to action (CTA) is a prompt designed to get your website visitor to take some immediate action, such as make a purchase or get more information.
+
+In addition to having CTAs on your web pages, you can include them in other marketing content you use to drive traffic to your website, such as blogs, emails, social media posts, and e-newsletters.
+
+Some common prompts:<br>
+
+    Apply today,
+    Book now,
+    Contact us,
+    Download for free,
+    Get a quote,
+    Join today,
+    Learn more,
+    Order now,
+    Register today,
+    Shop online and save
+
+A CTA may take your web visitor to a landing page for further action.
+
+Whatever your CTA is, it is important that the intent is clear and your audience has a good idea what to expect. After all, you don’t want lose visitors by having them click on a link that takes them somewhere they really don’t want to go.<br>
+4. Landing pages<br>
+
+Landing pages are destinations — the web pages where visitors are sent when they click on a hyperlink, such as a search engine result, a social media ad, a CTA, or a special offer on your website.
+
+These pages are designed to help you convert website visitors into leads by providing a way to capture their contact information.
+
+For example, suppose you want to build your authority as an SME by offering a free white paper to your website visitors. When they click on the offer link, it can take them to a landing page where the content of white paper is described in more detail and they can download the paper by submitting an email address.<br>
+5. Testimonials<br>
+
+One of the best ways to appeal to prospects and build credibility is with relatable success stories from their peers. That is what makes customer testimonials such valuable web content.
+
+Whether your goal is to create formal case studies, include real-life customer scenarios in a white paper, or post short video clips on Twitter or Facebook, having a process in place to identify happy customers and capture their feedback is a great idea.<br>
+
+TIP: Don’t hide all your valuable customer feedback on one testimonials page. Include testimonials throughout your site to serve as social proof that validates your claims.<br>
+6. Video & audio content<br>
+
+With the ability to embed video and audio clips so that anyone can view and listen without leaving the webpage, digitally recorded media are increasingly popular web content tools. It is a great way to offer content such as how-tos, webinars, podcasts, and seminars.<br>
+7. Visual content<br>
+
+According to the Social Science Research Network, 65% of people are visual learners. So, it makes good sense to incorporate visual web content into your website.
+
+In addition to having a graphic design that helps to convey the flavor and purpose of your brand, you can:
+
+    Use images — preferably original ones — to break up and enhance the text,
+    Create videos to entertain and inform,
+    Reiterate key information in a concise way through infographics,
+    Create your own memes to make important messages more memorable,
+    Offer presentations for visitors who want details in a more graphic, bulleted format,
+    Include screenshots to clearly show things that may be difficult to explain in words.</p><h4>
+<h4 id="type4">
+<h3 align="center"><u>Overview of HTTP - HTTP request – response</u></h3>
+<p>There are three basic features that make HTTP a simple but powerful protocol:<br>
+
+    HTTP is connectionless: The HTTP client, i.e., a browser initiates an HTTP request and after a request is made, the client waits for the response. The server processes the request and sends a response back after which client disconnect the connection. So client and server knows about each other during current request and response only. Further requests are made on new connection like client and server are new to each other.<br>
+
+    HTTP is media independent: It means, any type of data can be sent by HTTP as long as both the client and the server know how to handle the data content. It is required for the client as well as the server to specify the content type using appropriate MIME-type.<br>
+
+    HTTP is stateless: As mentioned above, HTTP is connectionless and it is a direct result of HTTP being a stateless protocol. The server and client are aware of each other only during a current request. Afterwards, both of them forget about each other. Due to this nature of the protocol, neither the client nor the browser can retain information between different requests across the web pages.<br>
+
+The following shows a very basic architecture of a web application and depicts where HTTP sits:<br>
+HTTP Architecture<br>
+
+The HTTP protocol is a request/response protocol based on the client/server based architecture where web browsers, robots and search engines, etc. act like HTTP clients, and the Web server acts as a server.<br>
+Client<br>
+
+The HTTP client sends a request to the server in the form of a request method, URI, and protocol version, followed by a MIME-like message containing request modifiers, client information, and possible body content over a TCP/IP connection.<br>
+Server<br>
+
+The HTTP server responds with a status line, including the message's protocol version and a success or error code, followed by a MIME-like message containing server information, entity meta information, and possible entity-body content.<br>
+</p></h4>
+<h4 id="type5">
+<h3 align="center"><u>Generation of dynamic web pages,Application Server,Web Security</u></h3>
+<p>A dynamic web page is a web page that displays different content each time it's viewed. For example, the page may change with the time of day, the user that accesses the webpage, or the type of user interaction. There are two types of dynamic web pages.
+Client-Side Scripting
+
+Web pages that change in response to an action within that web page, such as a mouse or a keyboard action, use client-side scripting.
+
+Client-side scripts generate client-side content. Client-side content is content that's generated on the user's computer rather than the server. In these cases, the user's web browser would download the web page content from the server, process the code that's embedded in the web page, and then display the updated content to the user.
+
+Scripting languages such as JavaScript and Flash allow a web page to respond to client-side events.
+Server-Side Scripting
+
+Web pages that change when a web page is loaded or visited use server-side scripting. Server-side content is content that's generated when a web page is loaded. For example, login pages, forums, submission forms, and shopping carts, all use server-side scripting since those web pages change according to what is submitted to it.
+
+Scripting languages such as PHP, ASP, ASP.NET, JSP, ColdFusion and Perl allow a web page to respond to submission events.<br>
+An application server is a server that hosts applications.<br>
+
+Application server frameworks are software frameworks for building application servers. An application server framework provides both facilities to create web applications and a server environment to run them.
+
+An application server framework contains a comprehensive service layer model. It includes a set of components accessible to the software developer through a standard API defined for the platform itself. For Web applications, these components usually run in the same environment as their web server(s), and their main job is to support the construction of dynamic pages. However, many application servers do more than generate web pages: they implement services such as clustering, fail-over, and load-balancing, so developers can focus on implementing the business logic<br>
+In general, web security refers to the protective measures and protocols that organizations adopt to protect the organization from, cyber criminals and threats that use the web channel. Web security is critical to business continuity and to protecting data, users and companies from risk
+A web security gateway protects organizations against online threats by monitoring and filtering internet traffic in real time and blocking traffic deemed to be suspicious, malicious, or outside of policy. Mimecast Web Security functions as a web security gateway, enabling access to benign websites and blocking access to inappropriate sites.</p></h4>
+</i>
+</body></html>
+
+
+
+
+
+
+
