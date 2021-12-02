@@ -1,0 +1,11 @@
+<html>
+<head><title>mixedframe</title></head>
+<body>
+<frameset cols="25%,*">
+<frame name="GITHUB" src="logo.html"></frame>
+<frameset rows="50%,*">
+<frame name="Github Tuitorial" src="video.html" autostart="true"></frame>
+<frame name="timetable" src="timetable.html">
+</frameset></frameset>
+</body></html>
+
