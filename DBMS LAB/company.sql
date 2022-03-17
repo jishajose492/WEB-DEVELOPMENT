@@ -58,3 +58,6 @@ CREATE TABLE dependents (
 	employee_id INT (11) NOT NULL,
 	FOREIGN KEY (employee_id) REFERENCES employees (employee_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+ALTER TABLE departments RENAME TO dept;
+ALTER TABLE employees MODIFY COLUMN salary smallint;
+ALTER TABLE employees ADD commission varchar(15);
