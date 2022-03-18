@@ -286,7 +286,7 @@ VALUES (29,'Alec','Partners','Child',146);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (30,'Sandra','Taylor','Child',176);
-SELECT * FROM company3.employees1;
+SELECT * from countries;
 SELECT phone_number,email from employees; 
 SELECT hire_date from employees where last_name="Fay"; 
 SELECT hire_date from employees where last_name='Grant' or last_name= 'Whalen'; 
