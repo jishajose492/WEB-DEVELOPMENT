@@ -21,7 +21,7 @@ for s in coll.find().sort("course","Mechanical").sort("mark",-1).limit(3):
 	print(s)
 
 print("\n\nQ5:\n")
-for i in coll.find({"gender":"female"},{"_id":0,"name.fname":1,"name.lname":1,"mark":1}):
+for i in coll.find({"gender":"female","mark":{'$gt':90}},{"_id":0,"name.fname":1,"name.lname":1,"mark":1}):
 	print(i)
 
 print("\n\nQ6:\n")
@@ -42,5 +42,5 @@ for x in coll.find({'$nor':[{"address.city":'Kollam'},{"address.city":'Thiruvana
 
 print("\n\nQ10:\n")
 
-for x in coll.find({"gender":"female",'$nor':[{"address.city":'Kollam'},{"address.city":'Thiruvananthapuram'}]},{"_id":0,"name.fname":1,"address.city":1,"gender":1}):
-	print(x["name"]["fname"])
+for x in coll.find({"gender":"female",'$or':[{"address.city":'Kollam'},{"address.city":'Thiruvananthapuram'}]},{"_id":0,"name.fname":1,"address.city":1,"gender":1}):
+	print(x)
