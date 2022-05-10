@@ -39,8 +39,9 @@ for x in coll.find({"address.city":"Kollam"},{"_id":0,"name.fname":1,"address.ci
 print("\n\nQ9:\n")
 for x in coll.find({'$nor':[{"address.city":'Kollam'},{"address.city":'Thiruvananthapuram'}]},{"_id":0,"name.fname":1,"address.city":1}):
 	print(x)
-
 print("\n\nQ10:\n")
+print ("NAME"+"                                          "+"ADDRESS") 
+print("************************************************************")
+for x in coll.find({"gender":"female",'$or':[{"address.city":'Kollam'},{"address.city":'Thiruvananthapuram'}]},{"_id":0,"name":1,"address.city":1}):
+	print(x["name"]["fname"]+"          "+x["name"]["lname"]+"                    "+x["address"]["city"])
 
-for x in coll.find({"gender":"female",'$or':[{"address.city":'Kollam'},{"address.city":'Thiruvananthapuram'}]},{"_id":0,"name.fname":1,"address.city":1,"gender":1}):
-	print(x)
